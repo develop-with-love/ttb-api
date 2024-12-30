@@ -1,4 +1,4 @@
-package com.myplugin.ttbapi;
+package com.ttb.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
