@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DutyRepository extends JpaRepository<DutyEntity, String> {
+public interface DutyRepository extends JpaRepository<DutyEntity, Long> {
 } 
