@@ -35,9 +35,8 @@ public class EpicEntity extends BaseJpaEntity {
     @Comment("상위 프로젝트 ID")
     private ProjectsEntity project;
 
-    @OneToMany
-    @JoinColumn(name = "id")
-    @Comment("권한 인원")
-    List<EmployeesEntity> permittedEmployees;
+     @OneToMany
+     @Comment("권한 인원")
+     List<EmployeesEntity> permittedEmployees;
 
 }

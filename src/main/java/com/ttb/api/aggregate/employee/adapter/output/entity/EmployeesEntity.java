@@ -1,5 +1,6 @@
 package com.ttb.api.aggregate.employee.adapter.output.entity;
 
+import com.ttb.api.aggregate.employee.domain.Role;
 import com.ttb.api.common.domain.BaseJpaEntity;
 import io.hypersistence.utils.hibernate.id.Tsid;
 import jakarta.persistence.*;
@@ -42,6 +43,11 @@ public class EmployeesEntity extends BaseJpaEntity {
     @Column
     @Comment("생성자")
     private boolean isLeader;
+
+    @Column
+    @Comment("권한")
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn

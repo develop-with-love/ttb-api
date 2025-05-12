@@ -30,9 +30,8 @@ public class StoryEntity extends BaseJpaEntity {
     @Comment("에픽 상세")
     private String description;
 
-    @OneToMany
-    @JoinColumn(name = "id")
-    @Comment("권한 인원")
-    private List<EmployeesEntity> permittedEmployees;
+     @OneToMany
+     @Comment("권한 인원")
+     private List<EmployeesEntity> permittedEmployees;
 
 }

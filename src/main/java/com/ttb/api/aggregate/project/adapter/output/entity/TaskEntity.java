@@ -42,8 +42,7 @@ public class TaskEntity extends BaseJpaEntity {
     @Comment("시작일")
     private LocalDateTime startDate;
 
-    @OneToMany
-    @JoinColumn(name = "id")
-    @Comment("권한 인원")
-    private List<EmployeesEntity> permittedEmployees;
+     @OneToMany
+     @Comment("권한 인원")
+     private List<EmployeesEntity> permittedEmployees;
 }
