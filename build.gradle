@@ -37,6 +37,8 @@ dependencies {
     implementation 'io.hypersistence:hypersistence-utils-hibernate-60:3.5.1'
     runtimeOnly('com.h2database:h2:2.1.214')
 
+    implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+
 }
 
 tasks.named('test') {

@@ -3,6 +3,7 @@ package com.ttb.api.common.domain;
 import jakarta.persistence.Column;
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.Comment;
 
 @Getter
@@ -10,6 +11,7 @@ import org.hibernate.annotations.Comment;
 public class BaseJpaEntity extends Timestamped{
 
     @Column
+    @ColumnDefault("false")
     @Comment("삭제여부")
     private final boolean isDeleted = false;
 

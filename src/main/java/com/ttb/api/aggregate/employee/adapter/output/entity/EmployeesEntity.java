@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.Comment;
 
 @AllArgsConstructor
@@ -42,7 +43,8 @@ public class EmployeesEntity extends BaseJpaEntity {
 
     @Column
     @Comment("생성자")
-    private boolean isLeader;
+    @ColumnDefault("false")
+    private boolean isLeader = false;
 
     @Column
     @Comment("권한")
